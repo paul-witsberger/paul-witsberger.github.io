@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Machine Learning Notes
+    </title>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Machine Learning Notes</h1>
+    </div><!-- end of header -->
+
+    <div id="intro">
+        <h2>Where I'm At On My Learning Path</h2>
+        <div id="known">
+            <h3>Stuff I've Learned or Used in the Past</h3>
+            <ul>
+                <li>
+                    <a href="#ffnn">Feed-Forward Neural Network (FFNN)</a> - a neural network with no feedback connections
+                </li>
+                <li>
+                    <a href="#rnn">Recurrent Neural Network (RNN)</a> - a neural network with a feedback connection, allowing for sequence analysis
+                </li>
+                <li>
+                    <a href="#ne">NeuroEvolution</a> - using an evolutionary algorithm to train a neural network
+                </li>
+                <li>
+                    <a href="#neat">NeuroEvolution of Augmenting Topologies (NEAT)</a> - a version of NE that allows the connections and neurons of the network to change and grow during training
+                </li>
+                <li>
+                    <a href="#supervised">Supervised Learning</a> - using examples to train by making predictions and backpropagating the errors
+                </li>
+            </ul>
+        </div><!-- end of known -->
+        
+        <div id="partial_known">
+            <h3>Stuff I've Started Learning, But Want to Learn More About</h3>
+            <ul>
+                <li>Convolutional Neural Networks</li>
+                <li>Transformers/Attention</li>
+                <li>Reinforcement Learning</li>
+            </ul>
+        </div><!-- end of partial_known -->
+        
+        <div id="unknown">
+            <h3>Stuff That Would Be Cool To Learn</h3>
+            <ul>
+                <li>AlphaStar</li>
+                <li>Differential Neural Networks</li>
+            </ul>
+        </div><!-- end of unknown -->
+    </div><!-- end of intro -->
+
+    <div id="notes">
+        <h2>Deep Dive/Notes</h2>
+        <div id="terminology">
+            <h3>A Note on Terminology</h3>
+            Machine Learning (ML) vs. Artificial Intelligence (AI) vs. Neural Networks (NN) vs. algorithms
+        </div><!-- end of terminology -->
+
+        <div id="nn">
+            <h3>Neural Networks</h3>
+            <div id="ffnn">
+                <h4>Feed-Forward Neural Networks (FFNN)</h4>
+                <p>FFNNs are neural networks that have connections from the inputs forward through the network to the outputs, with no feedback connections.</p>
+                <img src="../images/ffnn_diagram.gif" alt="diagram of a feed-forward neural network" title="FFNNs contain only connections moving &ldquo;forward&ldquo; from the inputs to the outputs" height="400px" />
+            </div><!-- end of ffnn -->
+
+            <div id="rnn">
+                <h4>Recurrent Neural Networks (RNN)</h4>
+                <p>RNNs are neural which contain a feedback connection.</p>
+                <img src="../images/rnn_diagram.gif" alt="diagram of a recurent neural network" title="RNNs contain feedback connections from prior hidden states or outputs." height="400px" />
+            </div><!-- end of rnn -->
+        
+        <div id="ne">
+            <h3 id="ne">NeuroEvolution</h3>
+            <p>Neuroevolution (NE) involves using an evolutionary algorithm to train a neural network. Evolutionary algorithms are heuristic search algorithms inspired by physical phenomena which can be used to perform optimization on difficult numerical problems. In this case, I have used a genetic algorithm, although other similar global optimization methods include particle swarm optimization and simulated annealing, among others.</p>
+            <img src="../images/neuroevolution.gif" alt="neuroevolution" title="Neuroevolution" height="400px" />
+        
+            <div id="genetic algoritm">
+                <h4 id="genetic algorithm">Genetic Algorithms (GA)</h4>
+                <p>Genetic algorithms are inspired by the principle of biological evolution, where there are successive generations of increasingly competitive individuals based on natural selection and random mutations.</p>
+                <img src="../images/ga.gif" alt="genetic algoritm" title="" height="400px" />
+            </div><!-- end of genetic algorithm -->
+        </div><!-- end of ne -->
+        
+        <div id="neat">
+            <h3 id="neat">NeuroEvolution of Augmenting Topologies (NEAT)</h3>
+            <p>NEAT takes the principle of NE farther by including the topology of the neural network as optimization variables in addition to the weights of the neural network. By including the network topology (that is, the hidden neurons and their connections) in the optimization, the neural network can grow to become more complex over the course of optimization.</p>
+            <img src="../images/neat.gif" alt="neat" title="" height="400px" />
+        </div><!-- end of neat -->
+
+        <div id="supervised">
+            <h3>Supervised Learning (SL)</h3>
+            <p></p>
+            <img src="../images/sl.gif" alt="supervised learning" title="" height="400px" />
+        </div><!-- end of supervised -->
+
+    </div><!-- end of notes -->
+
+</body>
+
+</html>

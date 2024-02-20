@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Contact Me</title>
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+    <div id="contact_box">
+        <!-- Need to figure out where I should specify sending this to. 'action' should contain the URL of where the information is sent-->
+        <form action="" method="post">
+            <fieldset>
+                <legend>Want to reach out?</legend>
+                
+                <div id="name">
+                    <p>
+                        <label>Name (optional)<br />
+                            <input type="text" name="name"/>
+                        </label>
+                    </p>
+                </div><!-- end of name -->
+                
+                <div id="email">
+                    <p>
+                        <label>Email (optional)<br />
+                            <input type="text" name="email" />
+                        </label>
+                    </p>
+                </div><!-- end of email -->
+
+                <div id="message">
+                    <p>
+                        <label>Message<br />
+                            <textarea name="message_box" placeholder="Send me a message!" required="required"></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <input type="submit" name="submit_button" value="Send"/>
+                    </p>
+                </div><!-- end of message -->
+
+            </fieldset>
+        </form>
+    </div><!-- end of contact box -->
+    
+</body>
+
+</html>
